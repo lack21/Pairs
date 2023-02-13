@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-body {
+  background-color: #2d6fab !important;
+}
+
+body {
+  background-color: #4dafcb;
+  color: #f8f9fa;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  text-align: center;
+  display: grid;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+body .title {
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+body .sub-title {
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+body .timer {
+  font-size: 2rem;
+}
+body .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: auto;
+  grid-gap: 2rem;
+}
+body .container .card {
+  width: 130px;
+  height: 200px;
+  background-image: linear-gradient(135deg, #f8f9fa, #95ebef);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  display: grid;
+  place-content: center;
+}
+body .container .card img {
+  width: 60px;
+  opacity: 0;
+}
+body .container .card .visible {
+  opacity: 1 !important;
+}
+body .switch-btn,
+body .reset-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 55px;
+  height: 55px;
+  background-color: #f8f9fa;
+  color: #4dafcb;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+body .reset-btn {
+  left: calc(100vw - 1rem - 55px);
+}
+
+@media screen and (max-width: 812px) {
+  .title {
+    font-size: 2.5rem !important;
+  }
+  .container {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+@media screen and (max-width: 648px) {
+  .title,
+  .sub-title {
+    font-size: 1.5rem !important;
+  }
+  .container {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media screen and (max-width: 484px) {
+  .title,
+  .sub-title {
+    font-size: 1.2rem !important;
+  }
+  .container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .switch-btn {
+    top: 0.2rem !important;
+    left: 0.2rem !important;
+  }
+  .reset-btn {
+    top: 0.2rem !important;
+    left: calc(100vw - 55px - 0.2rem) !important;
+  }
+}/*# sourceMappingURL=style.css.map */
